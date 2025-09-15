@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.forgot-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.card input[type='email'] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  width: 100%;
+  padding: 14px;
+  background-color: #132e4c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1c3f67;
+}
+
+.back-arrow {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.back-arrow:hover {
+  color: #132e4c;
+}
+

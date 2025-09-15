@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 import logo from "./assets/LOGO2.png";
 
@@ -16,14 +17,17 @@ const Login = () => {
         <form>
           <input type="email" placeholder="Enter your registered email" required />
           <input type="password" placeholder="Enter your password" required />
+
+          {/* ✅ Link to Forgot Password page */}
           <div className="forgot">
-            <a href="#">Forgot password?</a>
+            <Link to="/forgot">Forgot password?</Link>
           </div>
+
           <button type="submit">Sign in</button>
         </form>
 
         <div className="register">
-          Don’t have an account? <a href="#">Register</a>
+          Don’t have an account? <Link to="/signup">Register</Link>
         </div>
       </div>
 

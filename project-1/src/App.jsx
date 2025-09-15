@@ -2,9 +2,10 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import logo from "./assets/LOGO.png";
 import "./App.css";
 
-// import your pages
+// Import your pages
 import SignupPage from "./SignupPage";
-import Login from "./Login"; 
+import Login from "./Login";
+import ForgotP from "./ForgotP"; // ✅ Forgot Password Page
 
 function App() {
   const location = useLocation();
@@ -27,7 +28,7 @@ function App() {
               <button>Sign up for Free</button>
             </Link>
             <Link to="/login">
-              <button>Account</button>
+              <button>Contact us</button>
             </Link>
           </div>
         </header>
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<h1>Welcome to SeaSBee</h1>} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgot" element={<ForgotP />} /> {/* ✅ Forgot Password Route */}
       </Routes>
     </div>
   );

@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";   // ✅ Import Link
+import { Link } from "react-router-dom";
 import "./SignupPage.css";
 import logo from "./assets/LOGO2.png";
 
 const SignupPage = () => {
   return (
-    <div className="container">
+    <div className="content">
       {/* Left Section */}
       <div className="left-section">
-        <img src={logo} alt="SeaSBee Logo" className="logo" />  {/* ✅ use imported logo */}
+        <img src={logo} alt="SeaSBee Logo" className="logo" />
         <h1>
           Access data and grow with <br /> SeaSBee APIs
         </h1>
@@ -23,7 +23,7 @@ const SignupPage = () => {
             <span>Explore SeaSBee APIs</span>
           </div>
           <div className="feature">
-            <div className="feature-icon">☏</div>
+            <div className="feature-icon">☎</div>
             <span>24 × 7 technical support</span>
           </div>
         </div>
@@ -31,7 +31,7 @@ const SignupPage = () => {
 
       {/* Signup Box */}
       <div className="signup-container">
-        <img src={logo} alt="SeaSBee" />   {/* ✅ use imported logo */}
+        <img src={logo} alt="SeaSBee" className="signup-logo" />
 
         <h2>Create your account</h2>
 
@@ -53,11 +53,10 @@ const SignupPage = () => {
           </label>
         </div>
 
-        <button>Register</button>
+        <button className="register-btn">Register</button>
 
         <div className="signin">
-          Have an account?{" "}
-          <Link to="/login">Sign in</Link>   {/* ✅ This opens Login page */}
+          Have an account? <Link to="/login">Sign in</Link>
         </div>
       </div>
     </div>
