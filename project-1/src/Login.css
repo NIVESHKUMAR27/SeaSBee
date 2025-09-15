@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  margin-bottom: 15px;
+  
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #0b1f3b;
+  outline: none;
+}
+
+.forgot {
+  text-align: left;
+  margin: 8px 0 18px;
+}
+
+.forgot a {
+  color: #0b1f3b;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #1f344a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #0b1f3b;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register a {
+  color: #0d274d;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-links {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-links a {
+  color: #0d274d;
+  margin: 0 8px;
+  text-decoration: none;
+}

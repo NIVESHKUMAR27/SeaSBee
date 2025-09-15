@@ -1,0 +1,98 @@
+.navbar {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 60px;
+  margin: 0;
+  background-color: #0A1F33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #0A1F33;
+}
+
+/* CTA button */
+.navbar .cta {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+.navbar .cta button {
+  white-space: nowrap; 
+}
+
+.cta button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 5mm;
+}
+
+.cta button:first-child {
+  margin-left: 0; 
+}
+
+.cta button:hover {
+  background-color: white;
+  color: #000000;
+}
+
+
+/* Content below navbar */
+.content {
+  margin-top: 20px;       
+  text-align: center;     
+  padding: 40px 20px;    
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: #0A1F33;
+}
